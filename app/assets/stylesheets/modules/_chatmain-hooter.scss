@@ -1,0 +1,33 @@
+.chat-main__hooter {
+  height: 90px;
+  width: calc(100vw - 380px);
+  padding: 0 40px;
+  background-color: #AAAAAA;
+  position: relative;
+  &__text-area {
+    font-size: 16px;
+    color: #434A54;
+    line-height: 50px;
+    height: 50px;
+    width: calc(100vw - 515px);
+    border: none;
+    padding: 0 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 20px;
+    &--image {
+      float: right;
+    }
+  }
+  &__send {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    color: #FFFFFF;
+    background-color: $chatBlueColor;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+}

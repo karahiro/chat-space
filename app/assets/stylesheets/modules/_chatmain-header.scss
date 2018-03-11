@@ -1,0 +1,29 @@
+.chat-main {
+  float: right;
+  &__header {
+    height: 95px;
+    width: calc(100vw - 380px);
+    padding: 0 40px;
+    position: relative;
+    border-bottom: solid 1px #eeeeee;
+    &--group {
+      font-size: 20px;
+      color: #333333;
+      position: absolute;
+      top: 35px;
+    }
+    &--edit {
+      color: $chatBlueColor;
+      border: solid 1px;
+      padding: 10px 20px;
+      margin-top: 28px;
+      float: right;
+    }
+    &--menber {
+      font-size: 12px;
+      color: #999999;
+      position: absolute;
+      top: 70px;
+    }
+  }
+}
