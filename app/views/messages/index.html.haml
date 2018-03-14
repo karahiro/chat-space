@@ -1,14 +1,12 @@
-.header
-  チャットグループが作成されました。
-//ここまでがヘッダー
 //ここからがサイドコンテンツ
 .chat-side
   .chat-side__header
-    seo
-    %a.chat-side__header--edit-user
-      %i.fa.fa-cog
-    %a.chat-side__header--new-group
-      %i.fa.fa-pencil-square-o
+    = current_user.name
+    %ul.chat-side__header--edit-user
+      = link_to edit_user_path(current_user) do
+        %li.fa.fa-cog
+    %ul.chat-side__header--new-group
+      %li.fa.fa-pencil-square-o
   .chat-side__contents
     .chat-side__contents__ele
       .chat-side__contents__ele--group
